@@ -1,0 +1,155 @@
+.homepage {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 150px;
+    background: $dark;
+    color: $white;
+    overflow: hidden;
+
+    .homecontent {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .carrental {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+
+        h1 {
+            font-size: 5em;
+
+            svg {
+                color: $lightest;
+                animation: rotate 5s normal linear infinite;
+
+            }
+        }
+
+        h1, h2{
+            padding: 20px;
+            text-transform: uppercase;
+        }
+        p {
+            text-transform: normal;
+            padding: 20px;
+        }
+    }
+}
+
+.whyus{
+    margin: auto;
+    max-width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 50px;
+    background: rgba(255, 255, 255, 0);
+
+    h1 {
+        text-align: center;
+    }
+
+    .cars, .pricing, .employees, .safepay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        width: 25%;
+        padding: 25px 0;
+        
+
+        svg {
+            text-align: center;
+            margin: auto;
+        }
+    } 
+    .cars {
+        background: $purple;
+        color: $white;
+        border-radius: 0 0 0 20px ;
+        .blue {
+            font-size: 5em;
+            font-weight: 500;
+            padding: 20px;
+            color: $lightest;
+        }
+        svg {
+            font-size: 4em;
+        }
+    }
+    .pricing {
+        background: $lightest;
+        color: $white;
+        .blue {
+            font-size: 5em;
+            font-weight: 500;
+            padding: 20px;
+            color: $purple;
+        }
+        svg {
+            font-size: 4em;
+        }
+    }
+    .employees {
+        background: $lighter;
+        color: $white;
+        .blue {
+            font-size: 5em;
+            font-weight: 500;
+            padding: 20px;
+            color: $dark;
+        }
+        svg {
+            font-size: 4em;
+        }
+    }
+    .safepay {
+        background: $dark;
+        color: $white;
+        border-radius: 0 0 20px 0 ;
+
+        .blue {
+            font-size: 5em;
+            font-weight: 500;
+            padding: 20px;
+            color: $lightest;
+        }
+        svg {
+            font-size: 4em;
+        }
+    }
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate3d(0, 0, 1, 0deg);
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+    25% {
+        -webkit-transform: rotate3d(0, 0, 1, 90deg);
+        transform: rotate3d(0, 0, 1, 90deg);
+    }
+    50% {
+        -webkit-transform: rotate3d(0, 0, 1, 180deg);
+        transform: rotate3d(0, 0, 1, 180deg);
+    }
+    75% {
+        -webkit-transform: rotate3d(0, 0, 1, 270deg);
+        transform: rotate3d(0, 0, 1, 270deg);
+    }
+    100% {
+        -webkit-transform: rotate3d(0, 0, 1, 360deg);
+        transform: rotate3d(0, 0, 1, 360deg);
+    }
+}
